@@ -1,19 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.ionicframework.oritory825799" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>Oritory</name>
-  <description>
-        An Ionic Framework and Cordova project.
-    </description>
-  <author email="hi@ionicframework" href="http://ionicframework.com/">
-      Ionic Framework Team
-    </author>
-  <content src="index.html"/>
-  <access origin="*"/>
-  <preference name="webviewbounce" value="false"/>
-  <preference name="UIWebViewBounce" value="false"/>
-  <preference name="DisallowOverscroll" value="true"/>
-  <preference name="BackupWebStorage" value="none"/>
-  <feature name="StatusBar">
-    <param name="ios-package" value="CDVStatusBar" onload="true"/>
-  </feature>
+<widget
+	id="com.blueAlpaca.Oritory"
+	version="0.0.1"
+	xmlns="http://www.w3.org/ns/widgets"
+	xmlns:gap="http://phonegap.com/ns/1.0"
+	xmlns:cdv="http://cordova.apache.org/ns/1.0"
+>
+	<name>Oritory</name>
+	<description>
+        An blueAlpaca project.
+	</description>
+	<author email="blueAlpacaDevelopment@outlook.com" href="">
+      	blueAlpaca
+	</author>
+	
+	<content src="index.html"/>
+	
+	<access origin="*"/>
+	
+	<preference name="webviewbounce" value="false"/>
+	<preference name="UIWebViewBounce" value="false"/>
+	<preference name="DisallowOverscroll" value="true"/>
+	<preference name="BackupWebStorage" value="none"/>
+	<preference name="splashscreen" value="splash" />
+	<preference name="splashScreenDelay" value="10000" />
+	<preference name="StatusBarOverlaysWebView" value="true" />
+	<preference name="StatusBarStyle" value="lightcontent" />
+	
+	<gap:plugin name="org.apache.cordova.splashscreen" version="0.3.3" />
+	<gap:plugin name="com.phonegap.plugin.statusbar" version="1.1.0" />
+	<gap:plugin name="org.apache.cordova.network-information" version="0.2.12" />
+	<gap:plugin name="org.apache.cordova.inappbrowser" version="0.5.2" />
+	<gap:plugin name="org.apache.cordova.device" version="0.2.12" />
+	<gap:plugin name="com.ionic.keyboard" version="1.0.3" />
+	
+	<feature name="StatusBar">
+		<param name="ios-package" value="CDVStatusBar" onload="true"/>
+	</feature>
+	<feature name="Keyboard">
+		<param name="ios-package" value="IonicKeyboard" onload="true" />
+	</feature>
 </widget>
