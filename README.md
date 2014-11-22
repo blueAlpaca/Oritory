@@ -1,3 +1,3 @@
 Oritory
 =======
-It's a secret ;)
+It's a secret :smirk:
